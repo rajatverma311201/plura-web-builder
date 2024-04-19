@@ -1,5 +1,5 @@
 {
-    "name": "plura",
+    "name": "plura-web-builder",
     "version": "0.1.0",
     "private": true,
     "scripts": {
@@ -9,7 +9,10 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@clerk/nextjs": "^5.0.1",
+        "@clerk/themes": "^2.0.0",
         "@radix-ui/react-slot": "^1.0.2",
+        "@uploadthing/react": "^6.4.4",
         "class-variance-authority": "^0.7.0",
         "clsx": "^2.1.0",
         "lucide-react": "^0.356.0",
@@ -17,7 +20,8 @@
         "react": "^18",
         "react-dom": "^18",
         "tailwind-merge": "^2.2.1",
-        "tailwindcss-animate": "^1.0.7"
+        "tailwindcss-animate": "^1.0.7",
+        "uploadthing": "^6.9.0"
     },
     "devDependencies": {
         "@types/node": "^20",
