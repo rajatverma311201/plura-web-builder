@@ -1,10 +1,8 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import { ClerkProvider } from "@clerk/nextjs";
-import { dark } from "@clerk/themes";
 
-const inter = Inter({ subsets: ["latin"] });
+const font = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
     title: "Create Next App",
@@ -19,7 +17,7 @@ export default function RootLayout({
     return (
         // <ClerkProvider appearance={{ baseTheme: dark }}>
         <html lang="en" className="dark" suppressHydrationWarning>
-            <body className={inter.className}>{children}</body>
+            <body className={font.className}>{children}</body>
         </html>
         // </ClerkProvider>
     );

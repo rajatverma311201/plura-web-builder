@@ -75,109 +75,72 @@ body,
 
 @layer base {
     :root {
-        --gradient: #ffe259;
+        --gradient: linear-gradient(to top left, #1488cc, #2b32b2);
 
-        --background: 53 65% 5.36%;
-        --foreground: 53 10% 98.35%;
+        --background: 215 53.3% 3.52%;
+        --foreground: 215 8.2% 97.2%;
 
-        --muted: 53 49% 19.43%;
-        --muted-foreground: 53 10% 56.7%;
+        --muted: 215 41% 13.2%;
+        --muted-foreground: 215 8.2% 54.4%;
 
-        --popover: 53 45% 8.71%;
-        --popover-foreground: 53 10% 98.35%;
+        --popover: 215 48.6% 5.72%;
+        --popover-foreground: 215 8.2% 97.2%;
 
-        --card: 53 45% 8.71%;
-        --card-foreground: 53 10% 98.35%;
+        --card: 215 48.6% 5.72%;
+        --card-foreground: 215 8.2% 97.2%;
 
-        --border: 53 49% 19.43%;
-        --input: 53 49% 19.43%;
+        --border: 215 41% 13.2%;
+        --input: 215 41% 13.2%;
 
-        --primary: 53 100% 67%;
-        --primary-foreground: 53 10% 6.7%;
+        --primary: 215 82% 44%;
+        --primary-foreground: 215 8.2% 97.2%;
 
-        --secondary: 53 49% 19.43%;
-        --secondary-foreground: 53 10% 98.35%;
+        --secondary: 215 41% 13.2%;
+        --secondary-foreground: 215 8.2% 97.2%;
 
-        --accent: 53 49% 19.43%;
-        --accent-foreground: 53 10% 98.35%;
+        --accent: 215 41% 13.2%;
+        --accent-foreground: 215 8.2% 97.2%;
 
         --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 53 10% 98.35%;
+        --destructive-foreground: 215 8.2% 97.2%;
 
-        --ring: 53 100% 67%;
+        --ring: 215 82% 44%;
+
         --radius: 0.5rem;
     }
 
     .dark {
-        --gradient: #ffe259;
+        --gradient: linear-gradient(to top left, #1488cc, #2b32b2);
 
-        --background: 53 65% 5.36%;
-        --foreground: 53 10% 98.35%;
+        --background: 215 53.3% 3.52%;
+        --foreground: 215 8.2% 97.2%;
 
-        --muted: 53 49% 19.43%;
-        --muted-foreground: 53 10% 56.7%;
+        --muted: 215 41% 13.2%;
+        --muted-foreground: 215 8.2% 54.4%;
 
-        --popover: 53 45% 8.71%;
-        --popover-foreground: 53 10% 98.35%;
+        --popover: 215 48.6% 5.72%;
+        --popover-foreground: 215 8.2% 97.2%;
 
-        --card: 53 45% 8.71%;
-        --card-foreground: 53 10% 98.35%;
+        --card: 215 48.6% 5.72%;
+        --card-foreground: 215 8.2% 97.2%;
 
-        --border: 53 49% 19.43%;
-        --input: 53 49% 19.43%;
+        --border: 215 41% 13.2%;
+        --input: 215 41% 13.2%;
 
-        --primary: 53 100% 67%;
-        --primary-foreground: 53 10% 6.7%;
+        --primary: 215 82% 44%;
+        --primary-foreground: 215 8.2% 97.2%;
 
-        --secondary: 53 49% 19.43%;
-        --secondary-foreground: 53 10% 98.35%;
+        --secondary: 215 41% 13.2%;
+        --secondary-foreground: 215 8.2% 97.2%;
 
-        --accent: 53 49% 19.43%;
-        --accent-foreground: 53 10% 98.35%;
+        --accent: 215 41% 13.2%;
+        --accent-foreground: 215 8.2% 97.2%;
 
         --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 53 10% 98.35%;
+        --destructive-foreground: 215 8.2% 97.2%;
 
-        --ring: 53 100% 67%;
+        --ring: 215 82% 44%;
     }
-}
-
-.theme-custom {
-    /* Name: custom color palette
-       Author: Ilias Ism
-       URL: https://gradient.page */
-
-    /* CSS: .bg-gradient { background: var(--gradient) } */
-    --gradient: #ffe259;
-
-    --background: 53 65% 5.36%;
-    --foreground: 53 10% 98.35%;
-
-    --muted: 53 49% 19.43%;
-    --muted-foreground: 53 10% 56.7%;
-
-    --popover: 53 45% 8.71%;
-    --popover-foreground: 53 10% 98.35%;
-
-    --card: 53 45% 8.71%;
-    --card-foreground: 53 10% 98.35%;
-
-    --border: 53 49% 19.43%;
-    --input: 53 49% 19.43%;
-
-    --primary: 53 100% 67%;
-    --primary-foreground: 53 10% 6.7%;
-
-    --secondary: 53 49% 19.43%;
-    --secondary-foreground: 53 10% 98.35%;
-
-    --accent: 53 49% 19.43%;
-    --accent-foreground: 53 10% 98.35%;
-
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 53 10% 98.35%;
-
-    --ring: 53 100% 67%;
 }
 
 @layer base {
