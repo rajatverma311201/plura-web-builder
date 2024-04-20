@@ -443,12 +443,15 @@ export const AgencyDetails: React.FC<AgencyDetailsProps> = ({ data }) => {
                                 no longer have access to funnels, contacts etc.
                             </div>
                             <AlertDialogTrigger
+                                asChild
                                 disabled={isLoading || deletingAgency}
-                                className="hove:bg-red-600 mt-2 whitespace-nowrap rounded-md p-2 text-center text-red-600 hover:text-white"
+                                className="mt-2 whitespace-nowrap rounded-md   text-center text-destructive hover:text-white"
                             >
-                                {deletingAgency
-                                    ? "Deleting..."
-                                    : "Delete Agency"}
+                                <Button className="border border-destructive bg-destructive/20 text-destructive hover:bg-destructive/25 hover:text-destructive  ">
+                                    {deletingAgency
+                                        ? "Deleting..."
+                                        : "Delete Agency"}
+                                </Button>
                             </AlertDialogTrigger>
                         </div>
                     )}
@@ -464,7 +467,7 @@ export const AgencyDetails: React.FC<AgencyDetailsProps> = ({ data }) => {
                             </AlertDialogDescription>
                         </AlertDialogHeader>
                         <AlertDialogFooter className="flex items-center">
-                            <AlertDialogCancel className="mb-2">
+                            <AlertDialogCancel className="">
                                 Cancel
                             </AlertDialogCancel>
                             <AlertDialogAction

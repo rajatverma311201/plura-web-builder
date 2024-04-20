@@ -52,7 +52,7 @@ export const FileUpload = ({ apiEndpoint, onChange, value }: Props) => {
     return (
         <div className="w-full  bg-muted/30">
             <UploadDropzone
-                className="max-h-52"
+                className="max-h-52 p-5"
                 endpoint={apiEndpoint}
                 onClientUploadComplete={(res) => {
                     onChange(res?.[0].url);
