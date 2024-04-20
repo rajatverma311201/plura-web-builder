@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
 const font = DM_Sans({ subsets: ["latin"] });
 
@@ -17,7 +18,10 @@ export default function RootLayout({
     return (
         // <ClerkProvider appearance={{ baseTheme: dark }}>
         <html lang="en" className="dark" suppressHydrationWarning>
-            <body className={font.className}>{children}</body>
+            <body className={font.className}>
+                <Toaster />
+                {children}
+            </body>
         </html>
         // </ClerkProvider>
     );
