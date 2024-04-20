@@ -145,7 +145,8 @@ model Tag {
   subAccountId String     @db.ObjectId
   SubAccount   SubAccount @relation(fields: [subAccountId], references: [id], onDelete: Cascade)
 
-  Ticket Ticket[]
+  TicketIDs String[] @db.ObjectId
+  Ticket    Ticket[] @relation(fields: [TicketIDs], references: [id])
 
   @@index([subAccountId])
 }
@@ -186,7 +187,8 @@ model Ticket {
   value       Float?
   description String?
 
-  Tags Tag[]
+  TagIDs String[] @db.ObjectId
+  Tags   Tag[]    @relation(fields: [TagIDs], references: [id])
 
   customerId String?  @db.ObjectId
   Customer   Contact? @relation(fields: [customerId], references: [id], onDelete: SetNull)
