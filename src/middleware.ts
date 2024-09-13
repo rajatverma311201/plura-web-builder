@@ -23,8 +23,6 @@ export default authMiddleware({
             ?.split(`${process.env.NEXT_PUBLIC_DOMAIN}`)
             .filter(Boolean)[0];
 
-        console.log(hostname.get("host"));
-
         if (customSubDomain) {
             return NextResponse.rewrite(
                 new URL(`/${customSubDomain}${pathWithSearchParams}`, req.url),

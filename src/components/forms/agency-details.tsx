@@ -169,6 +169,7 @@ export const AgencyDetails: React.FC<AgencyDetailsProps> = ({ data }) => {
     const handleDeleteAgency = async () => {
         if (!data?.id) return;
         setDeletingAgency(true);
+
         //WIP: discontinue the subscription
         try {
             const response = await deleteAgency(data.id);
